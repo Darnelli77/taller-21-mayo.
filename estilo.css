@@ -1,0 +1,56 @@
+body{
+  font-family: Arial;
+  background:#f4f4f4;
+}
+
+
+.navbar{
+  z-index:999;
+}
+
+
+.carousel img{
+  height: 80vh;
+  object-fit: cover;
+}
+
+
+.card{
+  border:none;
+  transition:.3s;
+  box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  height:200px;
+  object-fit:cover;
+}
+
+#topBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  width:45px;
+  height:45px;
+  border:none;
+  border-radius:50%;
+  background:#198754;
+  color:white;
+  display:none;
+}
+
+
+.fade-in{
+  opacity:0;
+  transform:translateY(30px);
+  transition:1s;
+}
+
+.fade-in.show{
+  opacity:1;
+  transform:translateY(0);
+}
